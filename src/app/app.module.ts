@@ -4,21 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 import { MoviesComponent } from './views/movies/movies.component';
 import { DetailsComponent } from './views/details/details.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MoviesComponent,
-    DetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, MoviesComponent, DetailsComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
