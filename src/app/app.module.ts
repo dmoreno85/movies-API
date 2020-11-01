@@ -8,9 +8,10 @@ import { RouterModule } from '@angular/router';
 
 import { MoviesComponent } from './views/movies/movies.component';
 import { DetailsComponent } from './views/details/details.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, MoviesComponent, DetailsComponent],
+  declarations: [AppComponent, MoviesComponent, DetailsComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule,RouterModule],
   providers: [],
   bootstrap: [AppComponent],
