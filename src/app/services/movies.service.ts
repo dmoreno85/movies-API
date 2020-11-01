@@ -17,7 +17,7 @@ export class MoviesService {
 
   getDetailMovie(id: String) {
     return this.http.get(
-      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${this.APIKEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${this.APIKEY}&language=en-US`
     );
   }
 }
