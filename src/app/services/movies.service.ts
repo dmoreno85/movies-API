@@ -9,7 +9,15 @@ export class MoviesService {
 
   constructor(private http: HttpClient) {}
 
-  getPopularMovies(){
-    return this.http.get(`https://api.themoviedb.org/3/movie/popular?api_key=${this.APIKEY}&language=en-US`)
+  getAllMovies() {
+    return this.http.get(
+      `https://api.themoviedb.org/3/discover/movie?api_key=${this.APIKEY}&language=en-US`
+    );
+  }
+
+  getDetailMovie(id: String) {
+    return this.http.get(
+      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${this.APIKEY}&language=en-US`
+    );
   }
 }
