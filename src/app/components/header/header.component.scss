@@ -1,9 +1,30 @@
-header{
-    background-color: tomato;
-  
-    .home{
+header {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background: rgb(112, 17, 221);
+    z-index: 1000;
+    height: 2em;
+
+    .home,
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         width: 5em;
-        background-color:green;
-        color: white;
+
+        background: rgb(112, 17, 221);
+
+        h2 {
+            background: rgb(112, 17, 221);
+            color: white;
+            font-style: italic;
+        }
+
     }
+
+
 }

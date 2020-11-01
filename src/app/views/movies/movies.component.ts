@@ -13,7 +13,6 @@ export class MoviesComponent implements OnInit {
     this.movieService.getAllMovies().subscribe(
       (res) => {
         this.movies = res.results;
-        console.log(this.movies);
       },
       (error) => console.log(error)
     );

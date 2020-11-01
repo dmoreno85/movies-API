@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .moviesResult {
+        border: 1px solid rgb(75, 74, 74);
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 310px;
+        min-width: 310px;
+        max-height: 450px;
+        min-height: 450;
+        margin: 10px;
+        transition: 0.5s;
+        position: relative;
+        &:hover {
+            box-shadow: 0 0 12px 0 rgb(174, 247, 174);
+            transition: 0.9s;
+          }
+        &:hover .posterMovie img {
+            filter: grayscale(0%);
+            transition: 0.5s;
+            width: 330px;
+            height: 470px;
+          }
+        .posterMovie {
+            background: green;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            img {
+                filter: grayscale(50%);
+                width: 310px;
+                height: 450px;
+                transition: 0.5s;
+            }
+        }
+
+    }
+}
