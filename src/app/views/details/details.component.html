@@ -1,1 +1,9 @@
-<p>details works!</p>
+<div class="containerDetail">
+    <div class="detail" *ngIf="detailMovie">
+        <div class="imageDetail">
+            <h1>{{detailMovie.title}}</h1>
+            <img src="https://image.tmdb.org/t/p/w500/{{detailMovie?.poster_path}}" alt="{{detailMovie?.title}}" title="{{detailMovie?.title}}"/>
+        </div>
+        <p>{{detailMovie.overview}}</p>
+    </div>
+</div>
